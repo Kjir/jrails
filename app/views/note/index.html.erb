@@ -1,0 +1,7 @@
+<h1>Notes</h1>
+<% @notes.reverse.each do |note| %>
+<h2>Note <%= note.id %></h2>
+<p><%= note.text %></p>
+<% end %>
+<h1>Widget</h1>
+<%= render_widget :note %>
